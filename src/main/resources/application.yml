@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: projetoagenda
+
+  datasource:
+    url: jdbc:postgresql://aws-1-us-west-2.pooler.supabase.com:5432/postgres
+    username: postgres.gkxplzgbqcdzndgilgxo
+    password: BXpVEhpUgLB64JJK
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+api:
+  security:
+    token:
+      secret: minha-chave-secreta-muito-grande-para-jwt-1234567890
+
+allowedOrigins: "https://sitedeagenda.netlify.app/"
