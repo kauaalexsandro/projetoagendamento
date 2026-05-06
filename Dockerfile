@@ -2,8 +2,11 @@ FROM eclipse-temurin:25-jdk
 
 WORKDIR /app
 
-COPY target/*.jar app.jar
+# copia tudo
+COPY . .
 
-EXPOSE 8080
+# builda o projeto
+RUN ./mvnw clean package -DskipTests
 
-ENTRYPOINT ["java", "-jar", "app.jar"]
+# roda o jar
+CMD ["java", "-jar", "target/*.jar"]
