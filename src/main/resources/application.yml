@@ -5,7 +5,7 @@ spring:
   datasource:
     url: jdbc:postgresql://aws-1-us-west-2.pooler.supabase.com:5432/postgres
     username: postgres.gkxplzgbqcdzndgilgxo
-    password: ${DB_PASSWORD}
+    password: BXpVEhpUgLB64JJK
     driver-class-name: org.postgresql.Driver
 
   jpa:
@@ -14,11 +14,12 @@ spring:
       ddl-auto: update
 
 server:
-  port: ${PORT:8080}
+  address: 0.0.0.0
+  port: 8080
 
 api:
   security:
     token:
-      secret: ${JWT_SECRET}
+      secret: minha-chave-secreta-123456
 
 allowedOrigins: "*"
