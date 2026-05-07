@@ -1,10 +1,10 @@
-# fly.toml app configuration file generated for projetoagendamento on 2026-05-07T12:19:50Z
+# fly.toml app configuration file generated for projetoagendamento on 2026-05-07T12:31:51Z
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
 app = 'projetoagendamento'
-primary_region = 'ams'
+primary_region = 'gru'
 
 [build]
 
