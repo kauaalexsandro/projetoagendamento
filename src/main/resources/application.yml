@@ -2,11 +2,15 @@ spring:
   application:
     name: projetoagenda
 
-  datasource:
-    url: jdbc:postgresql://aws-1-us-west-2.pooler.supabase.com:5432/postgres
+    datasource:
+    url: jdbc:postgresql://aws-1-us-west-2.pooler.supabase.com:6543/postgres
     username: postgres.gkxplzgbqcdzndgilgxo
     password: BXpVEhpUgLB64JJK
     driver-class-name: org.postgresql.Driver
+
+    hikari:
+      maximum-pool-size: 3
+      connection-timeout: 20000
 
   jpa:
     show-sql: true
